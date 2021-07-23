@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Your Go-to Resource for Information on Climbing Gyms in Singapore">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylemap.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+        <title>WallsToSend SG</title>
+    </head>
+    <body>
+        <div class="topGridContainer">
+            <div class="title">WallsToSend SG</div>
+                <div class="nav about" id="about">About</div>
+                <div class="nav list" id="list">List</div>
+                <div class="nav map" id="map">Map</div>
+        </div>
+        <div class="mapContent">
+            <div id="topBar">
+                <input type="text" placeholder="Enter Gym Name" id="gymSearch">
+            </div>
+            <ul id="searchUl"></ul>
+            <div id="googleMap"></div>
+        </div>
+        <div class="pad"></div>
+        <script src="script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvrlt4Ldj82ZD26e1z0Oj_y4bQIYNxmqU&callback=myMap"></script>
+    </body>
+</html>
