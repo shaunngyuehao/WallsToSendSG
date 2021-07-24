@@ -1,29 +1,28 @@
 .topGridContainer {
     display: grid;
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
-      "title title . . . . . . about list map";
+      "title title . . . . . . . . about list map";
     width: 100%;
-    height: auto;
-    background-color:rgb(107, 122, 138);
-    padding-bottom: 10px;
+    height: 63px;
+    background-color: rgb(195, 203, 214);
 }
 
 .title {
     grid-area: title;
     height: 30px;
     line-height: 30px;
-    width: fit-content;
+    width: 147px;
     color: black;
     background-color: rgb(224, 218, 218);
-    border: 10px ridge rgb(214, 208, 208);
+    border: 3px dashed rgb(195, 203, 214);
     border-radius: 10px;
     text-align: center;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 30px;
     margin: 10px;
-    padding: 2px 10px 2px 10px;
+    padding: 2px 5px 2px 5px;
 }
 
 .nav {
@@ -34,8 +33,8 @@
     line-height: 30px;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 30px; 
-    margin: 10px 5px 10px 5px;
-    border: 10px ridge rgb(214, 208, 208);
+    margin: 10px 2px 10px 2px;
+    border: 3px dashed rgb(195, 203, 214);
     border-radius: 10px;
     background-color: rgb(224, 218, 218);
     padding-top: 2px;
@@ -49,9 +48,9 @@
 
 .list {
     grid-area: list;
-    border: 10px ridge rgb(61, 56, 56);
+    border: 3px dashed rgb(195, 203, 214);
     background-color: rgb(75, 74, 70);
-    color: white;
+    color: white
 }
 
 .map {
@@ -61,7 +60,7 @@
 
 .pad {
     background-image: url(pad.png);
-    height: 200px;
+    height: 50px;
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
