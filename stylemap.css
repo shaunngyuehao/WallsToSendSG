@@ -87,10 +87,11 @@ p {
 
 #searchUl {
     display: flex;
-    width: 50%;
-    height: 50px;
+    width: 51.7%;
+    flex-flow: wrap;
+    height: auto;
     margin: 0 37.5% 0px 11.1%;
-    padding: 2px 5px 2px 0;
+    padding: 2px 5px 5px 0;
     overflow: hidden;
 }
 
@@ -100,11 +101,12 @@ p {
     flex-direction: row;
     border: 4px groove black;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 27px;
+    font-size: 15px;
     padding: 2px 5px 2px 5px;
     background-color: white;
     margin: 0 5px 5px 0;
-    overflow: hidden; 
+    overflow: hidden;
+    cursor: pointer;
 }
 
 #googleMap {

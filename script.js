@@ -232,7 +232,6 @@ function hasBoards (gymn) {
 };
 
 function myMap() {
-
     const map = new google.maps.Map(document.getElementById("googleMap"), {
         center: {lat: 1.357, lng: 103.825535},
         zoom: 11.8,
@@ -287,12 +286,55 @@ var gymNames = [];
 for (var i = 1; i < 20; i++) {
     const gym = "gym";
     var gymNum = gym.concat(i.toString());
-    gymNames.push("<li onclick='openInfo(" + this[gymNum].name + ")'>" + this[gymNum].name + "</li>");
+    gymNames.push("<li onclick='openInfo(" + i + ")'>" + this[gymNum].name + "</li>");
 };
 
-function openInfo(gymn) {
+function openInfo(i) {
+    const gym = "gym";
+    var gymNum = gym.concat(i.toString());
+    
+    const map = new google.maps.Map(document.getElementById("googleMap"), {
+        center: {lat: 1.357, lng: 103.825535},
+        zoom: 11.8,
+      });
 
-}
+    const marker = new google.maps.Marker({
+        position: this[gymNum].coords,
+        map: map,
+    });
+        
+    const contentString =
+        '<div id="content">' +
+            '<h1 id="name">' + this[gymNum].name + '</h1>' 
+            + '<a href="' + this[gymNum].website + '">' + "Book your slot" + '</a>'
+            + '<a href="' + this[gymNum].socials[0] + '">' + '<img src="fb.png" style="width:25px;height:25px;float:right"/>' + '</a>'
+            + '<a href="' + this[gymNum].socials[1] + '">' + '<img src="ig.png" style="width:25px;height:25px;float:right"/>' + '</a>' + '<br>'
+            + '<p id="location">' + "<b>Location:</b> " + this[gymNum].location + '</p>'
+            + hasMultipass(this[gymNum]) 
+            + '<p id="day">' + "<b>Day Pass:</b> $" + this[gymNum].dayPrice + '</p>'
+            + hasStudentpass(this[gymNum])
+            + hasSeasonpass(this[gymNum]) 
+            + hasPromo(this[gymNum])
+            + whatWall(this[gymNum])
+            + hasFacilities(this[gymNum])
+            + hasBoards(this[gymNum])
+            + '<p id="rating">' + "<b>Google Rating:</b> " + this[gymNum].rating[0] 
+            + " (" + this[gymNum].rating[1] + " reviews)" + '</p>'
+        + '</div>';
+        
+    const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        pixelOffset: (400,500),
+    });
+
+    marker.addListener("click", () => {
+        infowindow.open({
+            anchor: marker,
+            map,
+            shouldFocus: false,
+        });
+    });
+};
 
 function filterGyms(arr, query) {
     return arr.filter(function(el) {
@@ -323,4 +365,3 @@ function resetBox () {
 };
 
 gymSearch.addEventListener('keyup', resetBox);
-

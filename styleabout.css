@@ -152,8 +152,7 @@ ul {
 
 #pur1, #pur2, #pur3, #mot1, #mot2, #mot3, #mot4, 
 #mot5, #mot6, #ab1, #ab2, #ab3, #ab4, #ab5, #ab6, #co1 {
-    border-top: black 3px;
-    border-top-style: double;
+    border-top: black dashed 1px;
 }
 
 #pur1, #mot1, #mot2, #mot3, #mot4, #mot5, #mot6, 
