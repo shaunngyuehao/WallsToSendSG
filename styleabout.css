@@ -76,7 +76,7 @@
 }
 
 .purpose {
-    border: 3px groove black;
+    border: 2px solid black;
     border-radius: 28px;
     text-align: left;
     opacity: 83%;
@@ -86,7 +86,7 @@
 }
 
 .motivation {
-    border: 3px groove black;
+    border: 2px solid black;
     border-radius: 28px;
     text-align: left;
     opacity: 83%;
@@ -102,7 +102,7 @@
 }
 
 .aboutMe {
-    border: 3px groove black;
+    border: 2px solid black;
     border-radius: 28px;
     text-align: left;
     opacity: 83%;
@@ -112,7 +112,7 @@
 }
 
 .contactMe {
-    border: 3px groove black;
+    border: 2px solid black;
     border-radius: 28px;
     text-align: left;
     opacity: 83%;

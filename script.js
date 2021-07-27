@@ -365,3 +365,37 @@ function resetBox () {
 };
 
 gymSearch.addEventListener('keyup', resetBox);
+
+//filter dropdown
+
+var filterColl = document.getElementsByClassName("filterDrop");
+var e;
+
+for (e = 0; e < filterColl.length; e++) {
+  filterColl[e].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var filterClick = this.nextElementSibling;
+    if (filterClick.style.maxHeight) {
+        filterClick.style.maxHeight = null;
+    } else {
+        filterClick.style.maxHeight = filterClick.scrollHeight + "px";
+    }
+  });
+}
+
+//sort dropdown
+
+var sortColl = document.getElementsByClassName("sortDrop");
+var f;
+
+for (f = 0; f < filterColl.length; f++) {
+  sortColl[f].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var sortClick = this.nextElementSibling;
+    if (sortClick.style.maxHeight) {
+        sortClick.style.maxHeight = null;
+    } else {
+        sortClick.style.maxHeight = sortClick.scrollHeight + "px";
+    }
+  });
+}
