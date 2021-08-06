@@ -1,13 +1,13 @@
 document.getElementById("about").addEventListener("click", goToAboutPage);
-document.getElementById("list").addEventListener("click", goToListPage);
+document.getElementById("beta").addEventListener("click", goToBetaPage);
 document.getElementById("map").addEventListener("click", goToMapPage);
 
 function goToAboutPage() {
     document.location.href = 'index.html'
 };
 
-function goToListPage() {
-    document.location.href = 'list.html'
+function goToBetaPage() {
+    document.location.href = 'beta.html'
 };
 
 function goToMapPage() {

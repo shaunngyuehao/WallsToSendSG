@@ -1,0 +1,67 @@
+.topGridContainer {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "title title . . . . . . . . about beta map";
+    width: 100%;
+    height: 63px;
+    background-color: rgb(195, 203, 214);
+}
+
+.title {
+    grid-area: title;
+    height: 30px;
+    line-height: 30px;
+    width: 147px;
+    color: black;
+    background-color: rgb(224, 218, 218);
+    border: 3px dashed rgb(195, 203, 214);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    padding: 2px 5px 2px 5px;
+}
+
+.nav {
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    color: black;
+    line-height: 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px; 
+    margin: 10px 2px 10px 2px;
+    border: 3px dashed rgb(195, 203, 214);
+    border-radius: 10px;
+    background-color: rgb(224, 218, 218);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.about {
+    grid-area: about;
+}
+
+.beta {
+    grid-area: beta;
+    border: 3px dashed rgb(195, 203, 214);
+    background-color: rgb(75, 74, 70);
+    color: white
+}
+
+.map {
+    grid-area: map;
+}
+
+
+.pad {
+    background-image: url(pad.png);
+    height: 50px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
