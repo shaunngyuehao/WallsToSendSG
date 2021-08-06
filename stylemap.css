@@ -118,12 +118,8 @@ h1 {
     transition: max-height 0.2s ease-out;
     display: flex;
     flex-direction: column;
-    padding: 0 5px 0 5px;
-}
-
-p {
-    font-size: 18px;
-    margin: 5px 0 5px 0;
+    padding: 0 0 0 0;
+    width: 100%;
 }
   
 .filterDrop:after {
@@ -142,6 +138,219 @@ p {
     float: right;
     vertical-align: center;
     line-height: 45px;
+}
+
+.days, .muls, .seas, .students, .walls, .boards, .facs, .regs {
+    border-top: dashed 1px black;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 5px;
+    margin: 0;
+    line-height: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropDay {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 58.4%; 
+    margin-right: 21.6%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+}
+
+.d26, .d24, .d22, .d20, .d18 {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.d24, .d22, .d20, .d18 {
+    border-top: 1px dashed black;
+}
+
+.days:hover .dropDay {display: block;}
+
+.dropMul {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 58.4%; 
+    margin-right: 21.6%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+}
+
+.m20, .m18, .m16, .m14, .m12 {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.m18, .m16, .m14, .m12 {
+    border-top: 1px dashed black;
+}
+
+.muls:hover .dropMul {display: block;}
+
+.dropSea {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 58.7%; 
+    margin-right: 21.3%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.s120, .s100, .s80, .s60 {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s100, .s80, .s60 {
+    border-top: 1px dashed black;
+}
+
+.seas:hover .dropSea {display: block;}
+
+.stuCheck {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.dropWall {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 65.5%; 
+    margin-right: 14.5%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+    margin-top: 0;
+}
+
+.bou, .topr, .lea {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topr, .lea {
+    border-top: 1px dashed black;
+}
+
+.walls:hover .dropWall {display: block;}
+
+.dropBoard {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 61.9%; 
+    margin-right: 18.1%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+}
+
+.moon, .kil, .tens {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kil, .tens {
+    border-top: 1px dashed black;
+}
+
+.boards:hover .dropBoard {display: block;}
+
+.dropFac {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 60.8%; 
+    margin-right: 19.2%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+}
+
+.sho, .gym, .loc, .wor, .sau, .poo, .nin {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gym, .loc, .wor, .sau, .poo, .nin {
+    border-top: 1px dashed black;
+}
+
+.facs:hover .dropFac {display: block;}
+
+.dropReg {
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    font-size: 18px;
+    right: 0;
+    position: absolute; 
+    margin-left: 60.35%; 
+    margin-right: 19.65%;
+    background-color: rgb(206, 194, 194);
+    border: 1px black solid;
+    line-height: normal;
+}
+
+.cen, .wes, .nor, .nore, .eas {
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wes, .nor, .nore, .eas {
+    border-top: 1px dashed black;
+}
+
+.regs:hover .dropReg {display: block;}
+
+.d26Check, .d24Check, .d22Check, .d20Check, .d18Check, .m20Check, .m18Check, .m16Check, .m14Check, .m12Check, .s120Check, 
+.s100Check, .s80Check, s60Check, .bouCheck, .topCheck, .leaCheck, .mooCheck, .kilCheck, .tenCheck, .shoCheck, .gymCheck, 
+.locCheck, .worCheck, .sauCheck, .pooCheck, .ninCheck, .cenCheck, .wesCheck, .norCheck, .noreCheck, .easCheck {
+    margin-left: 10px;
 }
 
 .sort {
