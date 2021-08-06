@@ -399,6 +399,25 @@ h1 {
     line-height: 45px;
 }
 
+.daySort, .mulSort, .seaSort, .stuSort, .ratSort {
+    border-top: dashed 1px black;
+    width: 100%;
+    font-size: 18px;
+    padding: 7.5px 0 7.5px 5px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dayBut, .mulBut, .seaBut, .stuBut, .ratBut {
+    padding-right: 8px;
+}
+
+.sortClick {
+    padding: 0;
+    width: 100%;
+}
+
 #searchUl {
     display: flex;
     width: 49%;

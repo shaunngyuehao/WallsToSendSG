@@ -57,6 +57,23 @@
     grid-area: map;
 }
 
+.betaContent {
+    background-image: url(rockwall.png);
+    padding-top: 1px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color:rgb(195, 203, 214);
+    background-image: url(rockwall.png); 
+    background-repeat: repeat-y;
+    background-size: cover;
+    min-height: 648px;
+}
+
+p {
+    font-size: 28px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+}
 
 .pad {
     background-image: url(pad.png);
