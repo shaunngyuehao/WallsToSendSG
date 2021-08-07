@@ -1106,8 +1106,6 @@ function populateGymSort () {
 populateGymSort();
 
 function sortFn () {
-    gymSort = [];
-    populateGymSort();
 
     if (!(unchecked("stuCheck") && unchecked("d26Check") && unchecked("d24Check") && unchecked("d22Check")
     && unchecked("d20Check") && unchecked("d18Check") && unchecked("m20Check") && unchecked("m18Check") 
@@ -1123,6 +1121,8 @@ function sortFn () {
 
 
     if (document.getElementById("dayBut").checked == true) {
+        gymSort = [];
+        populateGymSort();
         gymSort.sort( 
             function (a, b) {
                 if (this[a].dayPrice < this[b].dayPrice)
@@ -1135,6 +1135,8 @@ function sortFn () {
     };
 
     if (document.getElementById("mulBut").checked == true) {
+        gymSort = [];
+        populateGymSort();
         for (var i = 0; i < gymSort.length; i++) {
             if (this[gymSort[i]].tenPrice == null) {
                 gymSort.splice(i, 1);
@@ -1156,6 +1158,8 @@ function sortFn () {
     };
 
     if (document.getElementById("seaBut").checked == true) {
+        gymSort = [];
+        populateGymSort();
         for (var i = 0; i < gymSort.length; i++) {
             if (this[gymSort[i]].seasonPrice == null) {
                 gymSort.splice(i, 1);
@@ -1174,6 +1178,8 @@ function sortFn () {
     };
 
     if (document.getElementById("stuBut").checked == true) {
+        gymSort = [];
+        populateGymSort();
         for (var i = 0; i < gymSort.length; i++) {
             if (this[gymSort[i]].studentPrice == null) {
                 gymSort.splice(i, 1);
@@ -1195,6 +1201,8 @@ function sortFn () {
     }; 
 
     if (document.getElementById("ratBut").checked == true) {
+        gymSort = [];
+        populateGymSort();
         gymSort.sort( 
             function (a, b) {
                 if (this[a].rating[0] < this[b].rating[0])
