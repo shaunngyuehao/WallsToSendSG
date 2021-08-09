@@ -1229,7 +1229,7 @@ function sortFn () {
             map: map,
             icon: customMarkers[i],
         });
-        
+
         const contentString =
             '<div id="content">' +
                 '<h1 id="name">' + this[gymSort[i]].name + '</h1>' 
@@ -1248,7 +1248,7 @@ function sortFn () {
                 + '<p id="rating">' + "<b>Google Rating:</b> " + this[gymSort[i]].rating[0] 
                 + " (" + this[gymSort[i]].rating[1] + " reviews)" + '</p>'
             + '</div>';
-        
+
         const infowindow = new google.maps.InfoWindow({
             content: contentString,
             pixelOffset: (400,500),
@@ -1256,10 +1256,11 @@ function sortFn () {
 
         markerNum.addListener("click", () => {
             infowindow.open({
-              anchor: marker,
+              anchor: markerNum,  
               map,
               shouldFocus: false,
             });
+            console.log(markerNum);
         });
     };
 }; 
